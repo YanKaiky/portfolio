@@ -1,6 +1,7 @@
 export * from './Hero/Hero';
 export * from './Navbar/Navbar';
 export * from './Parallax/Parallax';
+export * from './Services/Services';
 export * from './Sidebar/Sidebar';
 export * from './Sidebar/Links/Links';
 export * from './Sidebar/ToggleButton/ToggleButton';
