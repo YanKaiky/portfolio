@@ -15,7 +15,7 @@ interface ISingleProps {
 export const Single: FC<ISingleProps> = ({ item }) => {
   const ref = useRef<any>(null);
 
-  const { scrollYProgress } = useScroll({ target: ref, /* offset: ["start start", "end start"] */ })
+  const { scrollYProgress } = useScroll({ target: ref })
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
