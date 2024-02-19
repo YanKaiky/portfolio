@@ -1,18 +1,41 @@
-import { FC } from "react"
+import { FC, useRef } from "react"
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export interface IItemProps {
-    id: number;
-    title: string;
-    img: string;
-    description: string;
+  id: number;
+  title: string;
+  img: string;
+  description: string;
 }
 
 interface ISingleProps {
-    item: IItemProps;
+  item: IItemProps;
 }
 
-export const Single:FC<ISingleProps> = ({ item }) => {
+export const Single: FC<ISingleProps> = ({ item }) => {
+  const ref = useRef<any>(null);
+
+  const { scrollYProgress } = useScroll({ target: ref, /* offset: ["start start", "end start"] */ })
+
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+
   return (
-    <section>{item.title}</section>
+    <section>
+      <div className="container">
+        <div className="wrapper">
+          <div className="imageContainer" ref={ref}>
+            <img src={item.img} alt={item.title} />
+          </div>
+
+          <motion.div className="textContainer" style={{ y }}>
+            <h2>{item.title}</h2>
+
+            <p>{item.description}</p>
+
+            <button>See Demo</button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
   )
 }
