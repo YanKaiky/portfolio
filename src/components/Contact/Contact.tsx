@@ -29,17 +29,17 @@ export const Contact = () => {
 
                 <motion.div variants={variants} className="item">
                     <h2>Mail</h2>
-                    <span>yankaikys@gmail.com</span>
+                    <span><a href="mailto:yankaikys@gmail.com" target='_blank'>yankaikys@gmail.com</a></span>
                 </motion.div>
 
                 <motion.div variants={variants} className="item">
                     <h2>WhatsApp</h2>
-                    <span>+55 47 99955-6723</span>
+                    <span><a href="tel:5547999556723" target='_blank'>+55 47 99955-6723</a></span>
                 </motion.div>
 
                 <motion.div variants={variants} className="item">
                     <h2>LinkedIn</h2>
-                    <span><a href="https://www.linkedin.com/in/yankaiky/" target='_blank'>@yankaiky</a></span>
+                    <span><a href="https://www.linkedin.com/in/yankaiky/" target='_blank'>linkedin.com/in/yankaiky</a></span>
                 </motion.div>
             </motion.div>
 
