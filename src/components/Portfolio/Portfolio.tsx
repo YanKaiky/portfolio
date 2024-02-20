@@ -33,23 +33,27 @@ const items: IItemProps[] = [
     title: "ShopYK",
     img: ShopYK,
     description: "Offers a variety of clothing and accessories for women, men and children. The selection includes casual wear, formal wear, footwear, handbags, jewelry and other fashion accessories carefully selected to meet customers' needs and preferences.",
+    url: "https://www.github.com/YanKaiky",
   },
   {
     id: 2,
     title: "Blog DailYK",
     img: BlogDailYK,
     description: "From travel to technology, the blog offers inspiring and informative content for all tastes. Discover captivating narratives and useful tips in one place.",
+    url: "https://www.github.com/YanKaiky",
   },
   {
     id: 3,
     title: "Smartiky",
     img: Smartiky,
     description: "It seeks to simplify financial control, offering intuitive tools for budgeting, tracking expenses and financial goals. Manage your money with ease and reach your financial goals with confidence.",
+    url: "https://www.github.com/YanKaiky",
   },
   {
     id: 4,
     title: "ChefDelivery",
     img: ChefDelivery,
     description: "Explore a variety of local restaurants, order online and have delicious meals delivered to your door. From traditional flavors to international cuisines, we offer a convenient and delicious culinary experience. Satisfy your gastronomic desires with just a few clicks. Enjoy the best of food, delivered directly to you.",
+    url: "https://www.github.com/YanKaiky",
   },
 ];

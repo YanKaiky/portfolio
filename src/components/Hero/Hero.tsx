@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import ScrollImage from '/scroll.png';
-import HeroImage from '/hero.png';
+import HeroImage from '/hero2.png';
 import './hero.scss';
 
 const textVariants = {

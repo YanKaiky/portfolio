@@ -8,5 +8,6 @@ export * from './Services/Services';
 export * from './Sidebar/Sidebar';
 export * from './Sidebar/Links/Links';
 export * from './Sidebar/ToggleButton/ToggleButton';
-export * from './Socials/IconSocial/IconSocial';
+export * from './Socials/SocialIcon/SocialIcon';
 export * from './Socials/Socials';
+export * from './TranslateIcon/TranslateIcon';

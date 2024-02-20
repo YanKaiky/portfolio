@@ -1,4 +1,4 @@
-import { Sidebar, Socials } from '..';
+import { Sidebar, Socials, TranslateIcon } from '..';
 import { motion } from 'framer-motion';
 import './navbar.scss';
 
@@ -8,13 +8,17 @@ export const Navbar = () => {
       <Sidebar />
 
       <div className="wrapper">
-        <motion.span
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          Yan Kaiky
-        </motion.span>
+        <div className="textTranslate">
+          <TranslateIcon />
+
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            Yan Kaiky
+          </motion.span>
+        </div>
 
         <div className="social">
           <Socials />

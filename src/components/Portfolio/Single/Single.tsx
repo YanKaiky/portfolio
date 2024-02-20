@@ -6,6 +6,7 @@ export interface IItemProps {
   title: string;
   img: string;
   description: string;
+  url: string;
 }
 
 interface ISingleProps {
@@ -32,7 +33,7 @@ export const Single: FC<ISingleProps> = ({ item }) => {
 
             <p>{item.description}</p>
 
-            <button>See Demo</button>
+            <a href={item.url} target="_blank"><button>See Demo</button></a>
           </motion.div>
         </div>
       </div>

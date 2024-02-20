@@ -61,28 +61,29 @@
             }
         }
     }
-
+    
     .listContainer {
         flex: 2;
         display: flex;
         max-width: 1366px;
         margin: auto;
-
+        
         .box {
             padding: 50px;
             border: 1px solid gray;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
+            
             p {
                 text-align: justify;
             }
-
+            
             button {
                 padding: 10px;
                 background-color: orange;
                 border: none;
+                font-weight: 500;
                 border-radius: 50px;
                 cursor: pointer;
             }
