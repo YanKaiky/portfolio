@@ -96,7 +96,7 @@ export const Contact = () => {
                     transition={{ delay: 3, duration: 1 }}
                 >
                     <input type="text" name="name" required placeholder='Name' />
-                    <input type="email" name="mail" required placeholder='E-mail' />
+                    <input type="email" name="email" required placeholder='E-mail' />
 
                     <textarea rows={8} name="message" placeholder='Message' />
 
