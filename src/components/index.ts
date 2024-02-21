@@ -1,4 +1,5 @@
 export * from './Contact/Contact';
+export * from './Cursor/Cursor';
 export * from './Hero/Hero';
 export * from './Navbar/Navbar';
 export * from './Parallax/Parallax';

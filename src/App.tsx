@@ -1,9 +1,10 @@
-import { Contact, Hero, Navbar, Parallax, Portfolio, Services } from './components';
+import { Contact, Cursor, Hero, Navbar, Parallax, Portfolio, Services } from './components';
 import './app.scss';
 
 const App = () => {
   return (
     <div>
+      <Cursor />
       <section id='home'>
         <Navbar />
         <Hero />
