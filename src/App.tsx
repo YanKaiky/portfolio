@@ -12,8 +12,8 @@ const App = () => {
       <section id='services'><Parallax type='services' /></section>
       <section><Services /></section>
       <section id='portfolio'><Parallax type='portfolio' /></section>
-      <Portfolio />
-      <section id='contact'><Contact /></section>
+      {/* <Portfolio /> */}
+      {/* <section id='contact'><Contact /></section> */}
     </div>
   );
 };
