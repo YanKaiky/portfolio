@@ -1,0 +1,16 @@
+.icon {
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    transition: all;
+}
+
+.icon:hover {
+    color: orange;
+    border-color: orange;
+}
