@@ -26,6 +26,8 @@ export const Contact = () => {
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
 
+    const isMobile = window.matchMedia('(max-width: 738px)').matches;
+
     const sendEmail = (e: any) => {
         e.preventDefault();
 
@@ -91,9 +93,9 @@ export const Contact = () => {
                 <motion.form
                     ref={formRef}
                     onSubmit={sendEmail}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: 3, duration: 1 }}
+                    initial={{ opacity: isMobile ? 1 : 0 }}
+                    whileInView={{ opacity: isMobile ? 1 : 1 }}
+                    transition={{ delay: isMobile ? 2 : 3, duration: 1 }}
                 >
                     <input type="text" name="name" required placeholder='Name' />
                     <input type="email" name="email" required placeholder='E-mail' />
