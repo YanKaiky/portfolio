@@ -43,6 +43,12 @@
             }
 
             .buttons {
+                .firstButton {
+                    background-color: white;
+                    color: #0a0a16;
+                    font-weight: 700;
+                }
+
                 button {
                     padding: 20px;
                     border: 1px solid white;
