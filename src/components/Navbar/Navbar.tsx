@@ -1,4 +1,5 @@
-import { Sidebar, Socials, TranslateIcon } from '..';
+import { MdGTranslate } from "react-icons/md";
+import { Sidebar, Socials, Icon } from '..';
 import { motion } from 'framer-motion';
 import './navbar.scss';
 
@@ -9,7 +10,7 @@ export const Navbar = () => {
 
       <div className="wrapper">
         <div className="textTranslate">
-          <TranslateIcon />
+          <Icon icon={<MdGTranslate />} />
 
           <motion.span
             initial={{ opacity: 0, scale: 0.5 }}
