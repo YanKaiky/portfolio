@@ -4,21 +4,17 @@ import { SiExpress, SiAdonisjs, SiNestjs, SiAxios } from "react-icons/si";
 import { TbBrandLaravel } from "react-icons/tb";
 
 // Front-end
-import { RiReactjsFill } from "react-icons/ri";
+import { RiReactjsFill, RiJavascriptFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiReactquery } from "react-icons/si";
 import { SiMui } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
+import { SiReactquery, SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
-import { BsFiletypeScss } from "react-icons/bs";
-import { TiHtml5 } from "react-icons/ti";
-import { SiCsswizardry } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
+import { BsFiletypeHtml, BsFiletypeScss, BsFiletypeCss } from "react-icons/bs";
+import { BiLogoTypescript } from "react-icons/bi";
 
 // Mobile
-import { SiFlutter } from "react-icons/si";
+import { SiFlutter, SiDart } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
 // Databases
@@ -91,9 +87,11 @@ export const About = () => {
                                 <Icon title='Express' icon={<SiExpress />} />
                                 <Icon title='AdonisJS' icon={<SiAdonisjs />} />
                                 <Icon title='NestJS' icon={<SiNestjs />} />
-                                <Icon title='Laravel' icon={<TbBrandLaravel />} />
+                                <Icon title='JavaScript' icon={<RiJavascriptFill />} />
+                                <Icon title='TypeScript' icon={<BiLogoTypescript />} />
                                 <Icon title='Axios' icon={<SiAxios />} />
                                 <Icon title='Docker' icon={<FaDocker />} />
+                                <Icon title='Laravel' icon={<TbBrandLaravel />} />
                             </div>
                         </div>
 
@@ -108,11 +106,11 @@ export const About = () => {
                                 <Icon title='Material-UI' icon={<SiMui />} />
                                 <Icon title='Tailmwind CSS' icon={<SiTailwindcss />} />
                                 <Icon title='Motion' icon={<TbBrandFramerMotion />} />
+                                <Icon title='HTML' icon={<BsFiletypeHtml />} />
                                 <Icon title='SCSS' icon={<BsFiletypeScss />} />
-                                <Icon title='HTML' icon={<TiHtml5 />} />
-                                <Icon title='CSS' icon={<SiCsswizardry />} />
-                                <Icon title='JavaScript' icon={<IoLogoJavascript />} />
-                                <Icon title='TypeScript' icon={<SiTypescript />} />
+                                <Icon title='CSS' icon={<BsFiletypeCss />} />
+                                <Icon title='JavaScript' icon={<RiJavascriptFill />} />
+                                <Icon title='TypeScript' icon={<BiLogoTypescript />} />
                             </div>
                         </div>
 
@@ -121,7 +119,10 @@ export const About = () => {
 
                             <div className="icons">
                                 <Icon title="Flutter" icon={<SiFlutter />} />
+                                <Icon title='Dart' icon={<SiDart />} />
                                 <Icon title="React Native" icon={<TbBrandReactNative />} />
+                                <Icon title='JavaScript' icon={<RiJavascriptFill />} />
+                                <Icon title='TypeScript' icon={<BiLogoTypescript />} />
                             </div>
                         </div>
 
@@ -129,9 +130,9 @@ export const About = () => {
                             <h3 className="subtitle">Databases</h3>
 
                             <div className="icons">
-                                <Icon title="MongoDB" icon={<SiMongodb />} />
                                 <Icon title="PostgreSQL" icon={<BiLogoPostgresql />} />
                                 <Icon title="MySQL" icon={<SiMysql />} />
+                                <Icon title="MongoDB" icon={<SiMongodb />} />
                                 <Icon title="PrismaORM" icon={<SiPrisma />} />
                                 <Icon title="Mongoose" icon={<SiMongoose />} />
                                 <Icon title="Sequelize" icon={<SiSequelize />} />
