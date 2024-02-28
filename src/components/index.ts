@@ -12,4 +12,4 @@ export * from './Sidebar/Links/Links';
 export * from './Sidebar/ToggleButton/ToggleButton';
 export * from './Socials/SocialIcon/SocialIcon';
 export * from './Socials/Socials';
-export * from './TranslateIcon/TranslateIcon';
+export * from './Icon/Icon';
