@@ -48,8 +48,16 @@ export const Hero = () => {
                     <motion.h2 variants={textVariants}>Yan Kaiky</motion.h2>
                     <motion.h1 variants={textVariants}>Full Stack & Mobile Developer</motion.h1>
                     <motion.div variants={textVariants} className="buttons">
-                        <motion.button variants={textVariants}>See the latest Works</motion.button>
-                        <motion.button variants={textVariants}>Contact Me</motion.button>
+                        <motion.button variants={textVariants} className="firstButton">
+                            <a href="/CV.pdf" download="Yan Kaiky Augusto dos Santos.pdf">
+                                Download CV
+                            </a>
+                        </motion.button>
+                        <a href="#contact">
+                            <motion.button variants={textVariants}>
+                                Contact Me
+                            </motion.button>
+                        </a>
                     </motion.div>
 
                     <motion.img variants={textVariants} animate='scrollButton' src={ScrollImage} alt="scroll" />

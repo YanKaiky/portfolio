@@ -1,3 +1,4 @@
+export * from './About/About';
 export * from './Contact/Contact';
 export * from './Cursor/Cursor';
 export * from './Hero/Hero';
@@ -11,4 +12,4 @@ export * from './Sidebar/Links/Links';
 export * from './Sidebar/ToggleButton/ToggleButton';
 export * from './Socials/SocialIcon/SocialIcon';
 export * from './Socials/Socials';
-export * from './TranslateIcon/TranslateIcon';
+export * from './Icon/Icon';

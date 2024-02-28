@@ -1,4 +1,4 @@
-import { Contact, Cursor, Hero, Navbar, Parallax, Portfolio, Services } from './components';
+import { About, Contact, Cursor, Hero, Navbar, Parallax, Portfolio, Services } from './components';
 import './app.scss';
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
+      <section id='about'><About /></section>
       <section id='services'><Parallax type='services' /></section>
       <section><Services /></section>
       <section id='portfolio'><Parallax type='portfolio' /></section>
