@@ -28,10 +28,10 @@ const sectionVariants = {
 export const Links = () => {
   const sections = [
     'Home',
+    'About',
     'Services',
     'Portfolio',
     'Contact',
-    'About',
   ];
 
   return (

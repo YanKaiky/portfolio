@@ -30,7 +30,7 @@ export const About = () => {
             ref={ref}
             animate='animate'
         >
-           <p>Abount</p>
+           <p>About</p>
         </motion.div>
     )
 }

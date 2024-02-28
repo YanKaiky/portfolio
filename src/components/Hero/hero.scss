@@ -52,6 +52,7 @@
                     margin-right: 20px;
                     cursor: pointer;
                     font-weight: 300;
+                    z-index: 2;
                 }
             }
 
@@ -70,6 +71,7 @@
         width: 50%;
         user-select: none;
         font-weight: bold;
+        pointer-events: none; /* Prevents the element from blocking clicks */
     }
 
     .imageContainer {
