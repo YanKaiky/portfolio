@@ -5,11 +5,8 @@ import { TbBrandLaravel } from "react-icons/tb";
 
 // Front-end
 import { RiReactjsFill, RiJavascriptFill } from "react-icons/ri";
-import { SiVite } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMui } from "react-icons/si";
-import { SiReactquery, SiTailwindcss } from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
+import { SiVite, SiReactrouter, SiMui, SiReactquery, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs, TbBrandFramerMotion } from "react-icons/tb";
 import { BsFiletypeHtml, BsFiletypeScss, BsFiletypeCss } from "react-icons/bs";
 import { BiLogoTypescript } from "react-icons/bi";
 
@@ -18,11 +15,9 @@ import { SiFlutter, SiDart } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
 // Databases
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiMysql, SiPrisma, SiMongoose, SiSequelize } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { SiMysql } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
-import { SiPrisma, SiMongoose, SiSequelize } from "react-icons/si";
 
 // Cloud
 import { FaAws, FaDigitalOcean } from "react-icons/fa";
@@ -102,6 +97,7 @@ export const About = () => {
                                 <Icon title='ReactJS' icon={<RiReactjsFill />} />
                                 <Icon title='Vite' icon={<SiVite />} />
                                 <Icon title='NextJS' icon={<TbBrandNextjs />} />
+                                <Icon title='React Router' icon={<SiReactrouter />} />
                                 <Icon title='React Icons' icon={<SiReactquery />} />
                                 <Icon title='Material-UI' icon={<SiMui />} />
                                 <Icon title='Tailmwind CSS' icon={<SiTailwindcss />} />
