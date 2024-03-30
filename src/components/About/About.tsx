@@ -85,7 +85,6 @@ export const About = () => {
                                 <Icon title='JavaScript' icon={<RiJavascriptFill />} />
                                 <Icon title='TypeScript' icon={<BiLogoTypescript />} />
                                 <Icon title='Axios' icon={<SiAxios />} />
-                                <Icon title='Docker' icon={<FaDocker />} />
                                 <Icon title='Laravel' icon={<TbBrandLaravel />} />
                             </div>
                         </div>
@@ -145,6 +144,8 @@ export const About = () => {
                                 <Icon title="Azure" icon={<SiMicrosoftazure />} />
                                 <Icon title="Nginx" icon={<SiNginx />} />
                                 <Icon title="Apache" icon={<SiApache />} />
+                                <Icon title="Docker" icon={<SiTraefikproxy />} />
+                                <Icon title='Docker' icon={<FaDocker />} />
                                 <Icon title="Docker Traefik" icon={<SiTraefikproxy />} />
                             </div>
                         </div>
