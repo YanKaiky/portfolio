@@ -1,45 +1,53 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
+import { fadeIn } from "../../../helpers/utils";
 
 interface IToggleButtonProps {
-  onClick: () => void;
+  open: boolean;
+  setOpen: (value: boolean) => void;
 }
 
-export const ToggleButton: FC<IToggleButtonProps> = ({ onClick }) => {
+export const ToggleButton: FC<IToggleButtonProps> = ({ open, setOpen }) => {
   return (
-    <button onClick={onClick}>
-      <svg width='23' height='23' viewBox="0 0 23 23">
-        <motion.path
-          strokeWidth="3"
-          stroke='black'
-          strokeLinecap="round"
-          variants={{
-            closed: { d: "M 2 2.5 L 20 2.5" },
-            open: { d: "M 3 16.5 L 17 2.5" }
+    <button>
+      <motion.div
+        variants={fadeIn("down", "tween", 1, 1.4)}
+        style={{
+          rowGap: open ? "0px" : "0.5rem",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "3rem",
+          height: "3rem",
+          padding: "8px",
+          order: 2,
+          cursor: "pointer",
+          borderWidth: "6px",
+          borderRadius: "9999px",
+        }}
+        onClick={() => setOpen(!open)}
+      >
+        <motion.div
+          initial={{ rotate: 0 }}
+          animate={{ rotate: open ? -45 : 0, translateY: open ? 2 : 0 }}
+          style={{
+            width: "100%",
+            height: "3px",
+            backgroundColor: "black",
           }}
-        />
+        ></motion.div>
 
-        <motion.path
-          strokeWidth="3"
-          stroke='black'
-          strokeLinecap="round"
-          d="M 2 9.423 L 20 9.423"
-          variants={{
-            closed: { opacity: 1 },
-            open: { opacity: 0 }
+        <motion.div
+          initial={{ rotate: 0 }}
+          animate={{ rotate: open ? 45 : 0 }}
+          style={{
+            width: "100%",
+            height: "3px",
+            backgroundColor: "black",
           }}
-        />
-
-        <motion.path
-          strokeWidth="3"
-          stroke='black'
-          strokeLinecap="round"
-          variants={{
-            closed: { d: "M 2 16.346 L 20 16.346" },
-            open: { d: "M 3 2.5 L 17 16.346" }
-          }}
-        />
-      </svg>
+        ></motion.div>
+      </motion.div>
     </button>
   );
 };
