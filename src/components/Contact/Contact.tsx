@@ -50,7 +50,7 @@ export const Contact = () => {
 
                 <motion.div variants={variants} className="item">
                     <h2>WhatsApp</h2>
-                    <span><a href="https://wa.me/5547999556723" target='_blank'>+55 (47) 99955-6723</a></span>
+                    <span><a href="https://wa.me/5547999556723?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target='_blank'>+55 (47) 99955-6723</a></span>
                 </motion.div>
 
                 <motion.div variants={variants} className="item">
