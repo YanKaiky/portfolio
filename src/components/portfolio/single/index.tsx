@@ -14,7 +14,7 @@ interface ISingleProps {
 }
 
 export const Single: FC<ISingleProps> = ({ item }) => {
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({ target: ref });
 

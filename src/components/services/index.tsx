@@ -19,7 +19,7 @@ const variants = {
 };
 
 export const Services = () => {
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   return (
     <section>

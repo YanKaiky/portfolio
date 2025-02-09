@@ -35,7 +35,7 @@ const items: IItemProps[] = [
 ];
 
 export const Portfolio = () => {
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,

@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 
 const variants = {
   initial: {
@@ -18,20 +18,20 @@ const variants = {
 };
 
 export const Contact = () => {
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
 
-  const formRef = useRef<any>(null);
+  const formRef = useRef<HTMLFormElement | null>(null);
 
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
 
   const isMobile = window.matchMedia("(max-width: 738px)").matches;
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_aod43ld", "template_5avcxqz", formRef.current, {
+      .sendForm("service_aod43ld", "template_5avcxqz", formRef.current!, {
         publicKey: "ui-ePk4xUVZc_aCRt",
       })
       .then(

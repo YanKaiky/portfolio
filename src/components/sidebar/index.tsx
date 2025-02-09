@@ -25,11 +25,14 @@ const variants = {
 export const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
-  const sidebarRef = useRef<any>(null);
+  const sidebarRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event: any) => {
-      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node)
+      ) {
         setOpen(false);
       }
     };

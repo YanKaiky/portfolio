@@ -6,7 +6,7 @@ interface IParallaxProps {
 }
 
 export const Parallax: FC<IParallaxProps> = ({ type }) => {
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,
