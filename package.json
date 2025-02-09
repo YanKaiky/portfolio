@@ -12,6 +12,9 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.0.1",
+    "framer-motion": "^11.0.5",
+    "@emailjs/browser": "^4.1.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {

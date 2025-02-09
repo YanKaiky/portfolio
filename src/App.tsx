@@ -1,5 +1,26 @@
+import {
+  About,
+  Contact,
+  Cursor,
+  Home,
+  Parallax,
+  Portfolio,
+  Services,
+} from "./components";
+
 const App = () => {
-  return <h1 className="font-bold text-red-800 underline">Test Text</h1>;
+  return (
+    <div>
+      <Cursor />
+      <Home />
+      <About />
+      <Parallax type="services" />
+      <Services />
+      <Parallax type="portfolio" />
+      <Portfolio />
+      <Contact />
+    </div>
+  );
 };
 
 export default App;
