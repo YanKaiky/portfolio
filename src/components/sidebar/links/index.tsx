@@ -29,11 +29,15 @@ export const Links = () => {
   const sections = ["Home", "About", "Services", "Portfolio", "Contact"];
 
   return (
-    <motion.div className="links" variants={variants}>
+    <motion.div
+      className="absolute w-full h-full flex flex-col items-center justify-center gap-5"
+      variants={variants}
+    >
       {sections.map((section) => (
         <motion.a
           href={`#${section.toLowerCase()}`}
           key={section}
+          className="text-[40px] md:text-[25px]"
           variants={sectionVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

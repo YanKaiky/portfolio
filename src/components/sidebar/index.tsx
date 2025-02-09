@@ -46,11 +46,14 @@ export const Sidebar = () => {
 
   return (
     <motion.div
-      className="sidebar"
+      className="flex flex-col items-center justify-center bg-white text-black"
       ref={sidebarRef}
       animate={open ? "open" : "closed"}
     >
-      <motion.div className="bg" variants={variants}>
+      <motion.div
+        className="fixed z-[999] top-0 left-0 bottom-0 w-[600px] bg-white md:w-[200px]"
+        variants={variants}
+      >
         <Links />
       </motion.div>
 
