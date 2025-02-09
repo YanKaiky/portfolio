@@ -12,40 +12,20 @@ export const ToggleButton: FC<IToggleButtonProps> = ({ open, setOpen }) => {
     <button>
       <motion.div
         variants={fadeIn("down", "tween", 1, 1.4)}
-        style={{
-          rowGap: open ? "0px" : "0.5rem",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "3rem",
-          height: "3rem",
-          padding: "8px",
-          order: 2,
-          cursor: "pointer",
-          borderWidth: "6px",
-          borderRadius: "9999px",
-        }}
+        className={`flex flex-col items-center justify-center w-12 h-12 p-2 order-2 cursor-pointer border-6 rounded-full ${
+          open ? "gap-0" : "gap-2"
+        }`}
         onClick={() => setOpen(!open)}
       >
         <motion.div
           initial={{ rotate: 0 }}
           animate={{ rotate: open ? -45 : 0, translateY: open ? 2 : 0 }}
-          style={{
-            width: "100%",
-            height: "3px",
-            backgroundColor: "black",
-          }}
+          className="w-full h-1 bg-black"
         ></motion.div>
-
         <motion.div
           initial={{ rotate: 0 }}
           animate={{ rotate: open ? 45 : 0 }}
-          style={{
-            width: "100%",
-            height: "3px",
-            backgroundColor: "black",
-          }}
+          className="w-full h-1 bg-black"
         ></motion.div>
       </motion.div>
     </button>
