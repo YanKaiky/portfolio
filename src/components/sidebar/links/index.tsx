@@ -37,7 +37,7 @@ export const Links = () => {
         <motion.a
           href={`#${section.toLowerCase()}`}
           key={section}
-          className="text-[40px] md:text-[25px]"
+          className="text-3xl"
           variants={sectionVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

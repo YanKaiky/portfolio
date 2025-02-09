@@ -6,7 +6,7 @@ import { Socials } from "../socials";
 
 export const Navbar = () => {
   return (
-    <div className="h-25 bg-white">
+    <div className="h-28 bg-[#0a0a16] text-white">
       <Sidebar />
 
       <div className="max-w-[1366px] mx-auto flex items-center justify-between h-full px-4">
