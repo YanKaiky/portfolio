@@ -35,8 +35,7 @@ const items: IItemProps[] = [
     id: 1,
     title: "Bistro Café",
     img: BCafé,
-    description:
-      "From travel to technology, the blog offers inspiring and informative content for all tastes. Discover captivating narratives and useful tips in one place.",
+    description: "A portfolio landing page for a Bistro Café.",
     url: "https://menuplacerestaurant.netlify.app/",
   },
   {
@@ -44,7 +43,7 @@ const items: IItemProps[] = [
     title: "Instituto Pequena Fênix - IPF",
     img: IPF,
     description:
-      "It seeks to simplify financial control, offering intuitive tools for budgeting, tracking expenses and financial goals. Manage your money with ease and reach your financial goals with confidence.",
+      "Project related to a children's hospital institution, created for a college project.",
     url: "https://instituto-pequena-fenix.netlify.app/",
   },
   {
