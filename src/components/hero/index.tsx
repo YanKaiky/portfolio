@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
-const textVariants = {
+const textVariants: Variants = {
   initial: {
     x: -500,
     opacity: 0,
@@ -23,7 +23,7 @@ const textVariants = {
   },
 };
 
-const sliderVariants: any = {
+const sliderVariants: Variants = {
   initial: {
     x: 0,
   },
@@ -80,9 +80,9 @@ export const Hero = () => {
         Turn Ideas Into Code.
       </motion.div>
 
-      <div className="imageContainer">
+      {/* <div className="imageContainer">
         <img src="/hero.png" alt="Character Yan Kaiky" />
-      </div>
+      </div> */}
     </div>
   );
 };

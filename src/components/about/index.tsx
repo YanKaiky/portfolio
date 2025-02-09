@@ -19,7 +19,7 @@ const variants = {
 };
 
 export const About = () => {
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   return (
     <section id="about">
@@ -30,9 +30,9 @@ export const About = () => {
         ref={ref}
         animate="animate"
       >
-        <div className="imgContainer">
+        {/* <div className="imgContainer">
           <img src="/me.png" alt="Yan Kaiky" />
-        </div>
+        </div> */}
 
         <div className="about">
           <h2 className="title">About Me</h2>
