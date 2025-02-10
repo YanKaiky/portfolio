@@ -54,13 +54,13 @@ export const Hero = () => {
           animate="animate"
         >
           <motion.h2
-            className="text-[30px] text-cyan-500 font-bold tracking-[10px] uppercase"
+            className="text-3xl text-cyan-500 font-bold tracking-[10px] uppercase"
             variants={textVariants}
           >
             Yan Kaiky
           </motion.h2>
           <motion.h1
-            className="text-[88px] md:text-[36px] font-bold"
+            className="text-5xl md:text-[36px] font-bold"
             variants={textVariants}
           >
             Full Stack & Mobile Developer
