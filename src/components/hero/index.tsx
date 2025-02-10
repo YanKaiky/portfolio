@@ -43,7 +43,7 @@ export const Hero = () => {
       className="overflow-hidden relative text-white"
       style={{
         height: "calc(100vh - 100px)",
-        background: "linear-gradient(180deg, #0a0a16, #111132)",
+        background: "linear-gradient(180deg, #000000, #1c1b1b)",
       }}
     >
       <div className="max-w-[1336px] h-full m-auto">
@@ -68,7 +68,7 @@ export const Hero = () => {
           <motion.div variants={textVariants} className="buttons">
             <motion.button
               variants={textVariants}
-              className="px-[20px] py-[20px] bg-white text-[#0a0a16] font-bold rounded-[50px] border border-white mr-[20px] cursor-pointer z-[2]"
+              className="px-[20px] py-[20px] bg-white text-black font-bold rounded-[50px] border border-white mr-[20px] cursor-pointer z-[2]"
             >
               <a href="/CV.pdf" download="Yan Kaiky Augusto dos Santos.pdf">
                 Download CV
@@ -95,7 +95,7 @@ export const Hero = () => {
       </div>
 
       <motion.div
-        className="absolute text-[40vh] bottom-[-120px] whitespace-nowrap text-[#ffffff09] w-[50%] select-none font-bold pointer-events-none"
+        className="absolute text-[40vh] bottom-[-120px] whitespace-nowrap text-[#2a2828] w-[50%] select-none font-bold pointer-events-none"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
